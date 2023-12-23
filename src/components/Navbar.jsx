@@ -84,7 +84,7 @@ function Navbar() {
                     </ul>
                 </div>
                 <div className="logo">
-                    <span>Social</span>Verse
+                    <span>Soci</span>allies
                 </div>
                 <div className="search">
                     <input
