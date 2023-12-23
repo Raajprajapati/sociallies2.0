@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Fugaz+One&family=Kaushan+Script&family=Shrikhand&family=Ubuntu:wght@400;500;700&display=swap');
+
+
+.post_wrapper {
+    width: 100%;
+    padding: 0.3rem;
+    margin-top: 3rem;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    background: white;
+}
+
+.post_image {
+    width: 100%;
+    border-bottom: 2px solid rgb(255, 255, 255);
+}
+
+.user_details {
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid rgb(255, 255, 255);
+    padding-bottom: 1rem;
+    padding: 1rem;
+    border-radius: 3px;
+
+}
+
+.user_details .u_img {
+    margin-right: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.user_details img {
+    border: 2px solid #ffffff;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.user_details p {
+    width: 80%;
+    font-size: 1.8rem;
+    font-weight: 500;
+    font-family: 'Fugaz One', cursive;
+    text-transform: capitalize;
+}
+
+.caption{
+    background-color: #f0f0f0;
+}
+.caption *{
+    padding: 1rem;
+    font-size: 1.6rem;
+}
+.caption img{
+    min-width: 100px;
+    max-width: 300px;
+}
+.caption ul,.caption ol{
+    padding-left:3rem ;
+}
+
+.post_details {
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+    border-bottom: 2px solid rgb(255, 255, 255);
+    border-radius: 3px;
+}
+
+.post_details div {
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.likebtn i {
+    color: #ef0000;
+    font-size: 2.4rem;
+    text-shadow: 1px 2px #ff9a9a;
+}
+
+.likebtn {
+    cursor: pointer;
+}
+
+.post_action {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.post_action div {
+    padding: 0.5rem;
+    font-size: 2rem;
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.commentbtn input {
+    border: none;
+    outline: none;
+    padding-left: 1rem;
+    font-size: 1.4rem;
+    background-color: transparent;
+}
+
+.commentbtn {
+    border-left: 1px solid rgb(255, 255, 255);
+    outline: none;
+}
+
+.commentbtn i {
+    color: #ebebeb !important;
+    font-size: 2.4rem;
+    cursor: pointer;
+    text-shadow: 1px 2px #1c1c1c;
+}
+
+.commentbox {
+    max-height: 20rem;
+    overflow-y: auto;
+    background-color: #f8f8f8;
+    height: auto;
+    font-size: 2rem;
+    border-radius: 5px;
+    background: #fcfcfc;
+    box-shadow: inset 35px 35px 70px #efefef,
+        inset -35px -35px 70px #ffffff;
+}
+.toggleComments{
+    text-align: center;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 700px) {
+
+    .post_action div {
+        font-size: 1.6rem;
+        width: 45%;
+
+    }
+
+    .commentbtn input {
+        width: 90%;
+        padding-left: 0.5rem;
+    }
+}
+
+@media screen and (max-width: 300px) {
+
+    .post_action {
+        flex-direction: column;
+    }
+
+    .post_action div {
+        width: 90%;
+        margin: 0.5rem;
+    }
+
+    .commentbtn {
+        border-left: none;
+        border-top: 1px solid rgb(192, 192, 192);
+    }
+
+    .commentbtn input {
+        width: auto;
+        max-width: 100%;
+    }
+}

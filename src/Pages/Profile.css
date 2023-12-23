@@ -1,0 +1,11 @@
+.project{
+    display: grid;
+    grid-template-columns: 2fr 3fr 2fr;
+}
+
+@media screen and (max-width:1267px) {
+    .project{
+        grid-template-columns: 1fr 2fr 1fr;
+    }
+    
+}
